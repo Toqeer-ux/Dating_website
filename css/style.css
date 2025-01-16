@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+/* p{
+    font-family: "Dancing Script", serif; (1)
+      font-family: "Inter", serif; (2)
+      font-family: "Shadows Into Light Two", cursive (3)
+      font-family: "Josefin Sans", sans-serif; (4)
+} */
+/* header-style */
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", serif;
+    margin: 0 12px;
+}
+
+.header .nav-link:hover {
+    color: #C80A50;
+}
+
+.header .nav-link.active {
+    color: #C80A50;
+}
+
+.languages {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.btn--subtle {
+    border: 1px solid #ced4da;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    width: 150px !important;
+}
+
+.btn--subtle:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 0;
+    list-style: none;
+    margin: 0;
+    width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+#languageButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Ensure the button takes full width if necessary */
+}
+
+/* hero style */
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/hero-baner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-content {
+    text-align: center;
+}
+
+.hero .hero-content .heading-one,
+.hero .hero-content .heading-two {
+    margin-bottom: 25px;
+}
+
+.hero .hero-content .heading-one h1 {
+    font-family: Shadows Into Light Two;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69.66px;
+    color: #fff;
+}
+
+.hero .hero-content .heading-two h2 {
+    font-family: Josefin Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #fff;
+}
+
+.hero .hero-content .content {
+    width: 80%;
+    margin: auto;
+}
+
+.hero .hero-content .content p {
+    color: #fff;
+    font-family: "Inter", serif;
+}
+
+.hero .hero-content .hero-btn {
+    margin-top: 50px;
+}
+
+.hero .hero-content .hero-btn a {
+    width: 135px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 5px;
+    background-color: #C80A50;
+    font-family: Dancing Script;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #f1f1f1;
+    display: block;
+    margin: auto;
+    line-height: 20px;
+}
+.hero .hero-content .hero-btn a:hover{
+    background-color: #353535;
+    border: 1px solid #C80A50;
+}
+/* date-form */
+.date-form {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/man-giving-rose.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.date-form .search-content .icon img {
+    width: 68px;
+}
+
+.date-form .search-content {
+    text-align: center;
+}
+
+.date-form .search-content .heading h3 {
+    font-family: Lucida Calligraphy;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 54.45px;
+    color: #fff;
+}
+
+.date-form .search-content .heading img {
+    width: 240px;
+}
+
+.date-form .search-content .heading {
+    margin: 20px 0;
+}
+
+.date-form .search-content .text p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+}
+
+.date-form .search-form h3 {
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+}
+
+.date-form .search-form .form-check-inputs label {
+    color: #C7C7C7;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.date-form .search-form .head-label label {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.date-form .search-form .form-check-inputs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 15px;
+}
+
+.date-form .search-form .form-check-input:checked {
+    background-color: #C80A50;
+    border: none;
+    box-shadow: none;
+}
+
+.date-form .selection-div {
+    margin-top: 15px;
+}
+
+.date-form .selection-div .age-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.date-form .selection-div .age-selection .min-age,
+.date-form .selection-div .age-selection .max-age {
+    flex: 1 1 auto;
+}
+
+.date-form .search-form .age-selection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 15px;
+}
+
+.date-form .search-form .age-selection span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #C7C7C7;
+
+}
+
+.date-form .seek-btn {
+    margin-top: 25px;
+}
+
+.date-form .seek-btn button {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #C80A50;
+    height: 40px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+}
+.date-form .seek-btn button:hover{
+    background-color: #353535;
+    border: 1px solid #C80A50;
+}
+/* membership */
+.membership {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/membership.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.membership .premium-logo img {
+    width: 84px;
+}
+
+.membership .membership-text {
+    width: 70%;
+    margin: auto;
+}
+
+.membership .membership-text h3 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    color: #F6C23E;
+    margin: 15px 0;
+}
+
+.membership .membership-text p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #fff;
+}
+
+/* work */
+.work {
+    padding: 60px 0;
+}
+
+.work .work-head {
+    text-align: center;
+}
+
+.work .work-head img {
+    width: 240px;
+}
+
+.work .work-head h3 {
+    font-family: Josefin Sans;
+    font-size: 38px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.work .work-content {
+    margin: 20px 0;
+}
+
+.work .work-content .row {
+    align-items: center;
+}
+
+.work .work-content .text-right {
+    text-align: end;
+}
+
+.work .work-content .left-img {
+    text-align: end;
+}
+
+.work .work-content img {
+    width: 60%;
+}
+
+.work .work-content h3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.work .work-content p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 24px;
+}
+
+/* contact-us */
+.contact-us {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/contact-us.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0 0;
+}
+
+.contact-us .contact-head-text {
+    text-align: center;
+}
+
+.contact-us .contact-head-text p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact-us .contact-head-text .sub-btn button {
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    background-color: #C80A50;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: center;
+    color: #fff;
+}
+.contact-us .contact-head-text .sub-btn button:hover{
+    background-color: #353535;
+    border: 1px solid #C80A50;
+}
+.contact-us .contact-head-text {
+    padding-bottom: 40px;
+}
+
+.contact-us .contact-data {
+    background-color: #c80a50a1;
+    padding: 60px 0;
+}
+
+.contact-us .contact-data .data-head {
+    text-align: center;
+}
+
+.contact-us .contact-data .data-head h3 {
+    color: #fff;
+    font-family: Lucida Calligraphy;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-us .contact-data .data-head img {
+    width: 240px;
+}
+
+.contact-us .contact-data .text {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    margin-top: 25px;
+}
+
+.contact-us .contact-data .text p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-us .contant-numbers .contact-box {
+    text-align: center;
+}
+
+.contact-us .contant-numbers .contact-box a ,.contact-us .contant-numbers .contact-box span{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-us .contant-numbers .contact-box p {
+    margin: 7px 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-us .contant-numbers {
+    margin-top: 35px;
+}
+
+.contact-us .contant-numbers i {
+    font-size: 22px;
+}
+
+.contact-us .contant-numbers strong {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #1E1E1E;
+    padding: 15px 0;
+}
+
+.footer .social-links {
+    text-align: center;
+}
+
+.footer .social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .social-links ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.footer .social-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footer .social-links ul li a:hover{
+    color: #C80A50;
+}
+/* Contact us */
+.contact-us-page {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../imgs/contact-us-page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+}
+
+.site-auth .site-logo {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.site-auth .site-logo img {
+    width: 150px;
+}
+
+.site-auth .site-heading {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.site-auth .site-heading h3 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.site-auth .site-form .form-label {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.site-auth .site-form .form-control,
+.site-auth .site-form .form-select {
+    border-radius: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3E3E3E;
+    min-height: 40px;
+}
+
+.site-auth .site-form .submit-btn {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0 20px;
+}
+
+.site-auth .site-form .submit-btn button {
+    width: 100%;
+    background-color: #C80A50;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: none;
+    height: 48px;
+    border: none;
+    outline: none;
+}
+
+.site-auth .site-form .back-login a{
+    width: 100%;
+    background-color: #858796;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: none;
+    height: 48px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Login */
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../imgs/login.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.site-footer {
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.site-footer P {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputWithIcon input {
+    padding-left: 40px;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.form-check-input:checked {
+    background-color: #C80A50;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.log-btn button {
+    width: 100%;
+    background-color: #C80A50;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: none;
+    height: 48px;
+    border: none;
+    outline: none;
+}
+
+.or-data {
+    margin: 20px 0;
+}
+
+/* .or-data h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #fff; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-size: 13px;
+ }
+ .or-data h2 span { 
+    padding:0 10px; 
+    color: #fff;
+} */
+.or-data h2 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.or-data h2::before,
+.or-data h2::after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.or-data h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.or-data h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.login .join-via-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.login .join-via-links .link-box {
+    border: 1px solid #FFFFFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .join-via-links .f-box img {
+    width: 13px;
+}
+
+.login .join-via-links .g-box img {
+    width: 24px;
+}
+
+.login .otp-login button {
+    width: 100%;
+    background-color: #858796;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: none;
+    height: 48px;
+    border: none;
+    outline: none;
+}
+.login .forgot-password{
+    margin-top: 12px;
+}
+.login .forgot-password a {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.login .register-btn{
+    margin-top: 15px;
+}
+.login .register-btn span{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.login .register-btn span a{
+    font-size: 14px;
+    color: #C80A50;
+}
+.create-account .form-check label{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.create-account .form-check label span{
+    color: #000000;
+}
+.create-account{
+    padding: 40px 0;
+    background: url(../imgs/create-account.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+}
+/* password */
+.pass{
+    padding: 40px 0;
+    background: url(../imgs/pass.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
+.pass .site-text{
+    margin: 25px 0;
+}
+.pass .site-text p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    font-family: Inter;
+    color: #fff;
+
+}
+@media (max-width:500px) {
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 3px #C80A50;
+    }
+    .navbar-collapse{
+        padding: 10px 30px;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .languages {
+        margin-left: 12px;
+    }
+    .create-account .form-check label {
+        font-size: 13px;
+    }
+    .create-account .col-md-6, .contact-us-page .col-md-6 {
+        margin-top: 10px;
+    }
+    .hero{
+        padding: 17rem 0;
+    }
+    .hero .hero-content .heading-one h1 {
+        font-size: 30px;
+    }
+    .hero .hero-content .heading-one, .hero .hero-content .heading-two {
+        margin-bottom: 12px;
+    }
+    
+    .hero .hero-content .heading-two h2 {
+        font-size: 40px;
+    }
+    .hero .hero-content .content {
+        width: 90%;
+    }
+    .date-form{
+        height: auto;
+        padding: 40px 0;
+    }
+    .date-form .search-content .icon img {
+        width: 45px;
+    }
+    .date-form .ps-5{
+        padding-left: 0 !important;
+    }
+    .membership{
+        height: auto;
+        padding: 40px 0;
+    }
+    .membership .membership-text {
+        width: 95%;
+    }
+    .membership .membership-text h3 {
+        font-size: 32px;
+    }
+    .membership .membership-text p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .date-form .search-content .text p {
+        font-size: 15px;
+    }
+    .hero .hero-content .content p {
+        font-size: 15px;
+    }
+    .contact-us .contact-head-text p {
+        font-size: 15px;
+    }
+    .contact-us .contact-data .text {
+        width: 90%;
+    }
+    .contact-us .contact-data .text p{
+        font-size: 15px;
+    }
+    .contact-us .contact-data .contact-box{
+        margin: 12px 0;
+    }
+    .contact-us .contant-numbers .contact-box p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .contact-us .contant-numbers strong {
+        font-size: 15px;
+    }
+}
+@media (min-width:501px) and (max-width:991px) {
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 3px #C80A50;
+    }
+    .navbar-collapse{
+        padding: 10px 30px;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .date-form .offset-md-2{
+        margin-left: 0;
+        width: 58%;
+    }
+    .membership .membership-text h3 {
+        font-size: 32px;
+    }
+    .membership .membership-text p {
+        font-size: 15px;
+        line-height: 29px;
+    }
+    .membership .membership-text {
+        width: 80%;
+    }
+    .contact-us .contact-head-text .sub-btn button {
+        height: 50px;
+        font-size: 16px;
+        line-height: 18.2px;
+    }
+}
+@media (min-width:992px) and (max-width:1024px) {
+    .site-auth .site-heading h3 {
+        font-size: 30px;
+    }
+}
